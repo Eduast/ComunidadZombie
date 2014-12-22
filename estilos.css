@@ -91,7 +91,7 @@ footer p:last-child:before
 header
 {
 	background: #344B54;
-	color: white;
+	color: #CCCCCC;
 	overflow: hidden;
 	padding: 1.5em;
 	position: relative;
@@ -108,7 +108,7 @@ header h1
 }
 header #avatar
 {
-	margin: 0.5em 0.5em 0 0;
+	margin: 1.5em 1.5em 0 0;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -124,18 +124,19 @@ header #logo
 	/*-moz-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);*/	
-	border-right: 1px solid white;
+	border-right: 1px solid #CCCCCC;
 	margin-right: 0.5em;
 }
 header #logo img
 {
 	margin-right: 0.5em;
 	padding-right: 0.5em;
-	width: 52px;
-	-webkit-transition: 0.5s;
+	width: 70px;
+	-webkit-filter: invert(100%);
 }
 header #logo img:hover{
-	-webkit-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);	
+	-webkit-transition: 0.5s;
 }
 nav
 {
