@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Comunidad de Zombies Developers">
-	<meta name="viewport" contest="width=device-width, minimun-scale=1, maximun-scale=1">
+	<meta name="viewport" content="width=device-width, minimun-scale=1, maximun-scale=1">
 	<title>ZombieCode</title>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="estilos.css">
+	<script src="prefixfree.js"></script>
 </head>
 <body>
 	<header>
@@ -29,12 +30,19 @@
 			<li><a href="#">Django</a></li>
 			<li><a href="#">Go</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-lapiz">Publicar</a>
+				<a href="#" class="icon-lapiz" id="mostrar-form">Publicar</a>
 			</li>
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<!-- <label for="titulo">Titulo</label> -->
+		<input type="text" id="titulo" placeholder="Titulo" required>
+		<!-- <label for="url">URL</label> -->
+		<input type="url" id="url"  placeholder="Link" required>
+		<input type="submit" value="Agregar">
+	</form>
 	<aside>
-		<video width="320" height="240" autoplay>
+		<video width="320" height="240" controls>
 		  	<source src="lecturas.mp4" type="video/mp4">
 		  	<source src="lecturas.ogg" type="video/ogg">
 		  	<!-- Actualiza tu Browser. -->
@@ -231,6 +239,8 @@
 		<p>
 			Eduardo 2014
 		</p>
-	</footer>
+	</footer>	
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>">
+	<script src="formulario.js"></script>
 </body>
 </html>
