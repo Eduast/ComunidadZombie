@@ -15,14 +15,13 @@ var id = setInterval(function() {
 	sessionStorage.setItem('url', $url.val());
 }, 1000);
 
-function mostrarFormulario(e){
-    e.preventDefault();
+function mostrarFormulario(){	
 	$form.slideToggle();
 	$list.slideToggle();
+	return false;
 }
 
-function agregarPost(e){
- 	e.preventDefault();
+function agregarPost(){
 	var url = $url.val(),
 		titulo = $titulo.val(),
 		$clone = $post.clone();
@@ -37,6 +36,7 @@ function agregarPost(e){
     $titulo.val('');
     $url.val('');
 	$clone.fadeIn();
+	return false;
 }
 
 //Eventos
